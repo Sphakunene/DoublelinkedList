@@ -31,7 +31,7 @@ public DoubleLL(){};
         }
         else{
             tail.next =newNode;
-            tail.previous=tail;
+            newNode.previous=tail;
             tail = newNode;
             
         }
@@ -81,9 +81,26 @@ public DoubleLL(){};
               }
               temp =current.next; 
               current.next =newNode;
+              newNode.previous=current;
               newNode.next = temp;
             }
             size++;
 
+    }
+    public void deleteFirst(){
+
+        Node<String> temp=head.next;
+        head=temp;
+        head.next=temp.next;
+
+        size--;
+    }
+    public void deleteLast(){
+       
+        Node<String> temp=tail.previous;
+        tail =temp;
+        tail.previous=temp.previous;
+        tail.next=null;
+        size--;
     }
 }

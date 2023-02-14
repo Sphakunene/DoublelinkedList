@@ -8,8 +8,9 @@ public class Main {
 
         l.display();
         System.out.println("the size of the list is : "+l.size());
-        l.addByPos(4, "riverside");
+        l.deleteLast();
         l.display();
         System.out.println("the size of the list is : "+l.size());
+      
     }
 }
