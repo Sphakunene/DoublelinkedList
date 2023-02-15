@@ -4,13 +4,13 @@ public class Main {
         l.addFirst("spha");
         l.addFirst("kunene");
         l.addFirst("geeks");
+        l.addFirst("for");
         l.addFirst("learning");
-
-        l.display();
-        System.out.println("the size of the list is : "+l.size());
-        l.deleteLast();
-        l.display();
-        System.out.println("the size of the list is : "+l.size());
+        
+       // l.display();
+       System.out.println(l.search("for"));     
+      
+       
       
     }
 }
